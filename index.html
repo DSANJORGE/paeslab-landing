@@ -288,7 +288,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Más de 20 trabajos de IA",
+          "name": "Más de tareas de IA",
           "description": "Explicaciones pedagógicas, categorización temática, análisis de distractores, detección de similitud y revisión automática."
         },
         {
@@ -724,7 +724,7 @@ footer{background:var(--surface);padding:var(--sp-16) 32px}
       <span class="label">La plataforma #1 para ensayos PAES</span>
     </div>
     <h1 class="display-lg">Genera ensayos y mini ensayos de <span class="gradient-blue">excelencia</span> DEMRE</h1>
-    <p class="body-lg"><strong>Lo que antes tomaba semanas, ahora tarda solo horas.</strong> PAES Lab es la plataforma chilena con inteligencia artificial que permite a docentes, colegios, preuniversitarios y editoriales crear, revisar y analizar ensayos <abbr title="Prueba de Acceso a la Educación Superior">PAES</abbr> alineados al <abbr title="Departamento de Evaluación, Medición y Registro Educacional">DEMRE</abbr>.</p>
+    <p class="body-lg"><strong>Lo que antes te tomaba semanas, hoy lo resuelves en horas.</strong> PAES Lab es la primera plataforma chilena impulsada por inteligencia artificial que permite a docentes, colegios, preuniversitarios y editoriales generar, revisar y analizar ensayos <abbr title="Prueba de Acceso a la Educación Superior">PAES</abbr> 100% alineados con el <abbr title="Departamento de Evaluación, Medición y Registro Educacional">DEMRE</abbr>.</p>
     <div class="hero-btns">
       <a href="https://app.paeslab.ai" class="btn-primary">Comenzar gratis</a>
       <a href="#features" class="btn-secondary">Explorar funcionalidades</a>
@@ -736,8 +736,8 @@ footer{background:var(--surface);padding:var(--sp-16) 32px}
 <!-- METRICS -->
 <section class="metrics">
   <div class="metrics-row">
-    <div class="metric" data-formula="&Sigma;"><div class="metric-num">20+</div><div class="metric-label">Trabajos de IA</div></div>
-    <div class="metric" data-formula="f(x)"><div class="metric-num">7</div><div class="metric-label">PAES</div></div>
+    <div class="metric" data-formula="&Sigma;"><div class="metric-num">20+</div><div class="metric-label">Tareas de IA</div></div>
+    <div class="metric" data-formula="f(x)"><div class="metric-num">7</div><div class="metric-label">Asignaturas PAES</div></div>
     <div class="metric" data-formula="&part;"><div class="metric-num">4</div><div class="metric-label">Formatos de exportacion</div></div>
     <div class="metric" data-formula="&infin;"><div class="metric-num">&infin;</div><div class="metric-label">Ensayos posibles</div></div>
   </div>
@@ -796,7 +796,7 @@ footer{background:var(--surface);padding:var(--sp-16) 32px}
     </div>
     <div class="f-card">
       <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M12 2a4 4 0 014 4c0 1.95-1.4 3.58-3.25 3.93"/><path d="M8.56 9.8A4.002 4.002 0 0012 18a4 4 0 003.44-1.94"/><path d="M15.44 14.06A4.002 4.002 0 0012 10a4 4 0 00-3.44 1.94"/><circle cx="12" cy="12" r="10"/></svg></div>
-      <h3 class="title-md">Mas de 20 trabajos de IA</h3>
+      <h3 class="title-md">Mas de 20 tareas de IA</h3>
       <p class="body-md">Explicaciones pedagogicas, categorizacion tematica, analisis de distractores, deteccion de similitud y revision automatica.</p>
     </div>
     <div class="f-card">
@@ -1229,7 +1229,11 @@ footer{background:var(--surface);padding:var(--sp-16) 32px}
       (function tick(now){
         const p=Math.min((now-t0)/dur,1);
         const ease=1-Math.pow(1-p,3);
-        el.textContent=(num<10?(ease*num).toFixed(1):Math.round(ease*num))+suf;
+        const current=ease*num;
+        const formatted = (num < 10 && Number.isInteger(num))
+          ? Math.round(current)
+          : (num < 10 ? current.toFixed(1) : Math.round(current));
+        el.textContent = formatted + suf;
         if(p<1)requestAnimationFrame(tick);
       })(performance.now());
       ctrObs.unobserve(el);
