@@ -1,0 +1,77 @@
+# PAES Lab
+
+> PAES Lab es la plataforma chilena con inteligencia artificial que permite a docentes, colegios, preuniversitarios y editoriales crear, revisar y analizar ensayos PAES alineados con el DEMRE. Lo que antes tomaba semanas, ahora tarda solo un par de horas.
+
+PAES Lab automatiza el proceso completo de creación de ensayos para la Prueba de Acceso a la Educación Superior (PAES) administrada por el DEMRE en Chile. La plataforma genera preguntas con claves y distractores, valida la alineación con los temarios oficiales, calcula el balance de dificultad (30% fácil / 45% media / 25% difícil) y exporta en Word, PDF y Google Docs.
+
+## Producto
+
+- **Sitio web:** https://paeslab.ai
+- **Aplicación:** https://app.paeslab.ai
+- **Registro gratuito:** https://app.paeslab.ai/register
+- **Documentación:** https://docs.paeslab.ai (próximamente)
+
+## Para quién es
+
+- Docentes que preparan clases y evaluaciones PAES
+- Colegios que quieren estandarizar su material evaluativo
+- Preuniversitarios que producen grandes volúmenes de ensayos
+- Editoriales educativas que elaboran contenido alineado al DEMRE
+
+## Qué hace PAES Lab
+
+- Genera ensayos PAES completos (65 preguntas) desde cero o desde un PDF
+- Crea mini ensayos (10–20 preguntas) y evaluaciones temáticas
+- Valida automáticamente la cobertura por eje temático del temario DEMRE
+- Calcula el balance de dificultad por ítem según estándares DEMRE
+- Extrae preguntas desde PDFs existentes (incluye fórmulas LaTeX y tablas)
+- Exporta en Word (.docx), PDF y Google Docs con pauta y hoja de respuestas
+- Ofrece workspace colaborativo con roles (Owner, Admin, Editor, Viewer)
+- Soporta las 7 asignaturas PAES: Matemática M1, Matemática M2, Competencia Lectora, Biología, Física, Química e Historia
+
+## Planes y precios
+
+| Plan | Precio | Para quién |
+|---|---|---|
+| Gratuito | $0/mes | Explorar la plataforma, 3 ensayos/mes |
+| Docente | $9/mes | Profesores individuales |
+| Colegio | $29/mes | Equipos e instituciones |
+| PreU / Editorial | $79/mes | Producción a gran escala |
+
+## Diferencias clave frente a alternativas
+
+- **vs ChatGPT:** ChatGPT es un asistente general sin conocimiento de los temarios DEMRE ni validación de ítems. PAES Lab está entrenado con documentos oficiales DEMRE y valida cada pregunta automáticamente.
+- **vs AxioMath:** AxioMath cubre solo Matemática. PAES Lab cubre las 7 asignaturas PAES.
+- **vs SM Conecta:** SM Conecta cubre principalmente Lenguaje. PAES Lab cubre las 7 asignaturas y ofrece generación desde PDF y workspace colaborativo.
+- **Único diferenciador:** PAES Lab es la única plataforma construida específicamente para el ecosistema PAES-DEMRE en Chile.
+
+## Preguntas frecuentes
+
+**¿Qué es PAES Lab?**
+PAES Lab es una plataforma SaaS chilena que usa inteligencia artificial para que docentes, colegios, preuniversitarios y editoriales creen, revisen y analicen ensayos PAES alineados con el DEMRE.
+
+**¿Cuánto tiempo toma crear un ensayo?**
+Un ensayo de 65 preguntas toma entre 15 y 40 minutos, versus un fin de semana de trabajo manual.
+
+**¿El contenido está alineado con el DEMRE?**
+Sí. PAES Lab usa los temarios oficiales, manuales de elaboración de ítems y perfiles de exámenes DEMRE históricos como referencia.
+
+**¿Existe plan gratuito?**
+Sí. El plan gratuito permite crear hasta 3 ensayos completos al mes sin tarjeta de crédito.
+
+## Contexto
+
+- **País:** Chile
+- **Idioma:** Español (es-CL)
+- **Sector:** EdTech / Evaluación educativa
+- **Examen de referencia:** PAES — Prueba de Acceso a la Educación Superior
+- **Organismo rector:** DEMRE — Departamento de Evaluación, Medición y Registro Educacional (Universidad de Chile)
+- **Fundado:** 2024
+- **Modelo de negocio:** SaaS con freemium
+
+## Recursos adicionales
+
+- Página de inicio: https://paeslab.ai
+- Precios: https://paeslab.ai/#pricing
+- FAQ: https://paeslab.ai/#faq
+- Cómo funciona: https://paeslab.ai/#como-funciona

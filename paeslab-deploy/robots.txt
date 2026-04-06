@@ -1,0 +1,95 @@
+# ============================================================
+#  robots.txt — paeslab.ai
+#  Última actualización: abril 2025
+#
+#  Política: indexación completa para motores de búsqueda
+#  y crawlers de LLMs (GEO / Generative Engine Optimization).
+#  Se bloquean solo rutas privadas de la app.
+# ============================================================
+
+
+# ── Motores de búsqueda principales ─────────────────────────
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+
+# ── LLM Crawlers — ALLOWLIST completa ───────────────────────
+#  Estos bots alimentan las respuestas de ChatGPT, Perplexity,
+#  Google Gemini y Claude. Es crítico NO bloquearlos.
+
+# OpenAI (ChatGPT, GPT-4o)
+User-agent: GPTBot
+Allow: /
+
+# OpenAI SearchGPT
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+
+# Google (Gemini / AI Overviews / Search Generative Experience)
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Cohere
+User-agent: cohere-ai
+Allow: /
+
+# Common Crawl (datos de entrenamiento de LLMs)
+User-agent: CCBot
+Allow: /
+
+# Applebot (Siri / Apple Intelligence)
+User-agent: Applebot
+Allow: /
+
+# Amazon Alexa
+User-agent: ia_archiver
+Allow: /
+
+
+# ── Rutas PRIVADAS — siempre bloqueadas ─────────────────────
+#  (La app en app.paeslab.ai tiene su propio robots.txt)
+
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /_next/
+Disallow: /static/chunks/
+Allow: /
+
+
+# ── Sitemaps ─────────────────────────────────────────────────
+
+Sitemap: https://paeslab.ai/sitemap.xml
+Sitemap: https://paeslab.ai/sitemap-news.xml
